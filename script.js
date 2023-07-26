@@ -8,17 +8,15 @@ function createGrid() {
     for (let i = 0; i < 16 * 16; i++) {
         const square = document.createElement("div");
         square.classList.add("square");
-        square.addEventListener("click", colorSquare); // Add click event listener
+        square.addEventListener("click", colorSquare);
         container.appendChild(square);
     }
 
-    // Add event listener to the color picker
     const colorPicker = document.getElementById("colorPicker");
     colorPicker.addEventListener("change", updateColor);
 }
 
 function colorSquare(event) {
-    // Set the background color permanently on click
     event.target.style.backgroundColor = currentColor;
 }
 
