@@ -25,11 +25,16 @@ body {
     ;
 }
 
+section {
+    margin-right: 20px;
+}
+
 section>section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 h1 {
